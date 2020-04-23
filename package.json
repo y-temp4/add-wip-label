@@ -1,7 +1,7 @@
 {
   "name": "add-wip-label",
   "version": "1.0.0",
-  "description": "Add wip label to PR",
+  "description": "Add WIP label to PR that title begin with `WIP: `.",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",

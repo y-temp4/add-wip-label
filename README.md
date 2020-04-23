@@ -1,11 +1,14 @@
 # add-wip-label
 
-Add wip label to PR.
+Add WIP label to PR that title begin with `WIP: `.
 
 ## Usage
 
+Create a workflow file (e.g. `.github/workflows/add-wip-label.yml`).
+
 ```
 name: "add-wip-label"
+
 on:
   pull_request:
     types: [opened, edited]

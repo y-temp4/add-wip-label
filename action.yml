@@ -1,5 +1,5 @@
 name: 'add-wip-label'
-description: 'Add wip label to PR'
+description: 'Add WIP label to PR that title begin with `WIP: `.'
 author: 'y-temp4'
 inputs:
   repo-token:
