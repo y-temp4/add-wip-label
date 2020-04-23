@@ -4,9 +4,6 @@ import * as github from '@actions/github'
 async function run(): Promise<void> {
   try {
     const token = core.getInput('repo-token', { required: true })
-    const configPath = core.getInput('configuration-path', {
-      required: true
-    })
     const prTitle = getPrTitle()
     console.log({ prTitle })
   } catch (error) {

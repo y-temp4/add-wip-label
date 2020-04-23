@@ -2032,9 +2032,6 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const token = core.getInput('repo-token', { required: true });
-            const configPath = core.getInput('configuration-path', {
-                required: true
-            });
             const prTitle = getPrTitle();
             console.log({ prTitle });
         }
