@@ -6,7 +6,7 @@ Add WIP label to PR that title begin with `WIP: `.
 
 Create a workflow file (e.g. `.github/workflows/add-wip-label.yml`).
 
-```
+```yml
 name: "add-wip-label"
 
 on:
