@@ -1,5 +1,6 @@
-on: pull_request: - edit
-
+on:
+  pull_request:
+    types: [edit]
 
 jobs:
   test: # make sure the action works on a clean machine without building
