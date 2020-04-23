@@ -1,7 +1,7 @@
 name: "add-wip-label"
 on:
   pull_request:
-    types: [edited]
+    types: [opened, edited]
 
 jobs:
   check:

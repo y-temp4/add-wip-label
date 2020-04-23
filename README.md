@@ -8,13 +8,13 @@ Add wip label to PR.
 name: "add-wip-label"
 on:
   pull_request:
-    types: [edited]
+    types: [opened, edited]
 
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/add-wip-label@v1
+    - uses: y-temp4/add-wip-label@v1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
 ```
