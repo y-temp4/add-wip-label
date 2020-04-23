@@ -1,6 +1,9 @@
 name: 'Your name here'
 description: 'Provide a description here'
 author: 'Your name or organization here'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
 runs:
   using: 'node12'
   main: 'dist/index.js'
