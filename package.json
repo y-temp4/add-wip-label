@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/y-temp4/add-wip-label.git"
   },
   "keywords": [
     "actions",
     "node",
-    "setup"
+    "wip"
   ],
   "author": "y-temp4",
   "license": "MIT",
