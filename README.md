@@ -4,6 +4,7 @@ Add wip label to PR.
 
 ## Usage
 
+
 ```
 name: "add-wip-label"
 on:
