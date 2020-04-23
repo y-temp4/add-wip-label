@@ -2031,6 +2031,10 @@ const github = __importStar(__webpack_require__(469));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            const token = core.getInput('repo-token', { required: true });
+            const configPath = core.getInput('configuration-path', {
+                required: true
+            });
             const prTitle = getPrTitle();
             console.log({ prTitle });
         }
@@ -2044,7 +2048,7 @@ function getPrTitle() {
     if (!pullRequest) {
         return undefined;
     }
-    return pullRequest.body;
+    return pullRequest;
 }
 run();
 
