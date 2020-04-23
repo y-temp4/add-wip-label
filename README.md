@@ -11,7 +11,7 @@ on:
     types: [opened, edited]
 
 jobs:
-  triage:
+  check:
     runs-on: ubuntu-latest
     steps:
     - uses: y-temp4/add-wip-label@v1.0.0
