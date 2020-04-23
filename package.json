@@ -1,6 +1,6 @@
 {
   "name": "add-wip-label",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add wip label to PR",
   "main": "lib/main.js",
   "scripts": {
