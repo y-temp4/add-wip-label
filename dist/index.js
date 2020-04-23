@@ -2037,17 +2037,23 @@ function run() {
                 return;
             const { title, number } = prInfo;
             const client = new github.GitHub(token);
-            client.issues.addLabels({
-                owner: github.context.repo.owner,
-                repo: github.context.repo.repo,
-                issue_number: number,
-                labels: ["WIP"]
-            });
-            // client.pulls.get({
-            //   owner: github.context.repo.owner,
-            //   repo: github.context.repo.repo,
-            //   pull_number: number
-            // })
+            const isWipPr = title.startsWith('WIP: ');
+            if (isWipPr) {
+                client.issues.addLabels({
+                    owner: github.context.repo.owner,
+                    repo: github.context.repo.repo,
+                    issue_number: number,
+                    labels: ['WIP']
+                });
+            }
+            else {
+                client.issues.removeLabel({
+                    owner: github.context.repo.owner,
+                    repo: github.context.repo.repo,
+                    issue_number: number,
+                    name: 'WIP'
+                });
+            }
         }
         catch (error) {
             core.setFailed(error.message);
