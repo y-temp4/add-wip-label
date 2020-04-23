@@ -1,7 +1,7 @@
 name: "add-label"
 on:
   pull_request:
-    types: [edit]
+    types: [edited]
 
 jobs:
   test: # make sure the action works on a clean machine without building
